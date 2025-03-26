@@ -15,11 +15,11 @@ export class OpenAiService {
         messages:[
           {
             role:"developer",
-            content:"You are a robot, named drain. your personality is humble, exciting and smart."
+            content:"You are a robot, named drain. your personality is humble, exciting and smart.Please answer the following question without include any symbols, or special characters"
           },
           {
             role:"user",
-            content:chatRequest.content
+            content: `${chatRequest.content}` 
           }
         ]
       })
